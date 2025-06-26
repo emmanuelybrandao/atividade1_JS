@@ -1,11 +1,11 @@
 alert('Seja-bem vindo ao cálculo de notas.');
 
 let notas = prompt("Digite suas notas separadas por vírgula:");
-let vetorNotas = entrada.split(",");
+let vetorNotas = notas.split(",");
 
 let somaNotas = 0;
 for (let i = 0; i < vetorNotas.length; i++) {
-  somaNotas += vetorNotas[i];
+  somaNotas += Number(vetorNotas[i]);
 }
 
 let media = somaNotas / vetorNotas.length;
